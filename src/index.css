@@ -12,3 +12,19 @@ img{
 span{
     font-size: smaller;
 }
+
+.jumbotron{
+    background-image: url(public/img/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0%;
+}
+
+li{
+    color: grey;
+}
