@@ -1,44 +1,53 @@
-import AppNavbar from "./AppNavbar"
 export default function AppHeader(){
 
-  const navs = [
+const navs = [
     {
+        id: 1,
         name:"CHARACTERS",
         link:"#",
     },
     {
+        id: 2,
         name:"COMICS",
         link:"#",
     },
     {
+        id: 3,
         name:"MOVIES",
         link:"#",
     },
     {
+        id:  4,
         name:"TV",
         link:"#",
     },
     {
+        id: 5,
         name:"GAMES",
         link:"#",
     },
     {
+        id: 6,
         name:"COLLECTIBLES",
         link:"#",
     },
     {
+        id: 7,
         name:"VIDEOS",
         link:"#",
     },
     {
+        id: 8,
         name:"FANS",
         link:"#",
     },
     {
+        id: 9,
         name:"NEWS",
         link:"#",
     },
     {
+        id: 10,
         name:"SHOP",
         link:"#",
     },
@@ -56,9 +65,11 @@ export default function AppHeader(){
               </button>
           <div className="collapse navbar-collapse flex-end" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              {navs.map(nav=>(
-                <li className="nav-item">
-                  <a className="nav-link" href="{nav.link}">{nav.name}</a>
+              {navs.map(nav => (
+                <li className="nav-item" key={nav.id}>
+                    <a className="nav-link" href={nav.link}>
+                        {nav.name}
+                    </a>
                 </li>
               ))}
             </ul>

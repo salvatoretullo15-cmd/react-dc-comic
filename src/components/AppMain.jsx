@@ -1,6 +1,7 @@
+import AppCard from "./AppCard"
 export default function AppMain(){
 
-  const comics = [
+const comics = [
   {
     id: 1,
     title: "Action Comics #1000: The Deluxe Edition",
@@ -155,44 +156,57 @@ export default function AppMain(){
   },
 ];
 
+const icons = [
+    {
+    id:1,
+    image:"./public/img/buy-comics-digital-comics.png",
+    alt:"digital comics",
+    text:"DIGITAL COMICS",
+    },
+    {
+    id:2,
+    image:"./public/img/buy-comics-merchandise.png",
+    alt:"merchandise",
+    text:"MERCHANDISE",
+    },
+    {
+    id:3,
+    image:"./public/img/buy-comics-shop-locator.png",
+    alt:"shop locator",
+    text:"SHOP LOCATOR",
+    },
+    {
+    id:4,
+    image:"./public/img/buy-comics-subscriptions.png",
+    alt:"subscriptions",
+    text:"SUBSCRIPTION",
+    },
+    {
+    id:5,
+    image:"./public/img/buy-dc-power-visa.svg",
+    alt:"dc power visa",
+    text:"DC POWER VISA",
+    },
+];
+
 
   return (
     <main className="bg-black text-white"> 
-      <div className="container p-5">
-        <p>--CONTENT GOES HERE--</p>
+      <div className="container-fluid p-5">
+          <div className="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
+            
+          </div>
       </div>
-      <div className="bg-primary p-5">
-        <div className="justify-content-center text-center align-items-center  row">
-          <div className="col-sm-4 col-md-2 p-3">
-            <img className="me-2" src="./public/img/buy-comics-digital-comics.png" alt="digital comics"/>
-            <p>
-              DIGITAL COMICS
-            </p>
-          </div>
-          <div className="col-sm-4 col-md-2 p-3">
-            <img className="me-2" src="./public/img/buy-comics-merchandise.png" alt="merchandise"/>
-            <p>
-              MERCHANDISE
-            </p>
-          </div>
-          <div className="col-sm-4 col-md-2 p-3">
-            <img className="me-2" src="./public/img/buy-comics-shop-locator.png" alt="shop locator"/>
-            <p>
-              SHOP LOCATOR
-            </p>
-          </div>
-          <div className="col-sm-4 col-md-2 p-3">
-            <img className="me-2" src="./public/img/buy-comics-subscriptions.png" alt="subscriptions"/>
-            <p>
-              SUBSCRIPTION
-            </p>
-          </div>
-          <div className="col-sm-4 col-md-2 p-3">
-            <img className="me-2" src="./public/img/buy-dc-power-visa.svg" alt="dc power visa"/>
-            <p>
-              DC POWER VISA
-            </p>
-          </div>
+      <div className="blueBar bg-primary p-5">
+        <div className="container-fluid justify-content-center align-items-center text-center row">
+            {icons.map(icon=>(
+              <div className="col-md-2 p-2" key={icon.id}>
+                <img className="me-2" src={icon.image} alt={icon.alt}/>
+                  <p className="me-2">
+                    {icon.text}
+                  </p>
+              </div>
+            ))}
         </div>
       </div>
     </main>
