@@ -204,6 +204,11 @@ const icons = [
               </div>
             ))}
           </div>
+          <div className="mt-4 d-flex justify-content-center">
+            <button className="btn btn-primary fw-bold ps-5 pe-5 border-0">
+              LOAD MORE
+            </button>
+          </div>
       </div>
       <div className="bluebar bg-primary p-5">
         <div className="container">
