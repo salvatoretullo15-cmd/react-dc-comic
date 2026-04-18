@@ -6,7 +6,7 @@ export default function AppFooter(){
     <div className="jumbotron">
       <div className="container justify-content-center text-white">
         <div className="row">
-          <div className="col-sm-1 col-md-2 mt-4">
+          <div className="row-cols-sm-1 col-md-3 mt-4">
             <h2>
               DC COMICS
             </h2>
@@ -45,7 +45,7 @@ export default function AppFooter(){
               </li>
             </ul>
           </div>
-          <div className="col-sm-1 col-md-2 mt-4">
+          <div className="row-cols-sm-1 col-md-3 mt-4">
             <h2>
               DC
             </h2>
@@ -85,7 +85,7 @@ export default function AppFooter(){
               </li>
             </ul>
           </div>
-          <div className="col-sm-1 col-md-2 mt-4">
+          <div className="row-cols-sm-1 col-md-3 mt-4">
             <h2>
               SITES
             </h2>
@@ -113,16 +113,16 @@ export default function AppFooter(){
     <div className="blackbar">
       <div className="container">
         <div className="row">
-          <div className="flex-grow-1 col-8 p-3">
+          <div className="flex-grow-1 col-9 p-3">
             <button className="border-primary btn text-white fw-bold">SIGN-UP NOW!</button>
           </div>
-          <div className="col-4 p-3">
+          <div className="col-3 p-3">
             <button className="btn text-primary fw-bold">FOLLOW US</button>
-            <img src="./public/img/footer-facebook.png" alt="facebook" className="me-2"/>
-            <img src="./public/img/footer-periscope.png" alt="persicope"className="me-2" />
-            <img src="./public/img/footer-pinterest.png" alt="pinterest" className="me-2"/>
-            <img src="./public/img/footer-twitter.png" alt="twitter"className="me-2" />
-            <img src="./public/img/footer-youtube.png" alt="youtube" className="me-2"/>
+            <img src="./public/img/footer-facebook.png" alt="facebook" className="m-1"/>
+            <img src="./public/img/footer-periscope.png" alt="persicope"className="m-1" />
+            <img src="./public/img/footer-pinterest.png" alt="pinterest" className="m-1"/>
+            <img src="./public/img/footer-twitter.png" alt="twitter"className="m-1" />
+            <img src="./public/img/footer-youtube.png" alt="youtube" className="m-1"/>
           </div>
         </div>
       </div>
