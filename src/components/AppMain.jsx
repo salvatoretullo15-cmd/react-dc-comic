@@ -195,14 +195,21 @@ const icons = [
       </div> 
       <div className="container p-5">
           <div className="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
-            
+            {comics.map(comic => (
+              <div className="col" key={comic.id}>
+                <div className="card mt-4">
+                  <img src={comic.thumb} className="imagine rounded-0" alt={comic.title} />
+                </div>
+                  <h2 className="textcomic mt-3">{comic.series}</h2>
+              </div>
+            ))}
           </div>
       </div>
-      <div className="blueBar bg-primary p-5">
+      <div className="bluebar bg-primary p-5">
         <div className="container">
           <div className="row">
             {icons.map(icon=>(
-              <div className="col-6 col-md-2 d-flex align-items-center justify-content-center" key={icon.id}>
+              <div className="col-md-2 d-flex align-items-center justify-content-center" key={icon.id}>
                 <img className="m-2" src={icon.image} alt={icon.alt}/>
                     <p className="m-2">
                       {icon.text}
