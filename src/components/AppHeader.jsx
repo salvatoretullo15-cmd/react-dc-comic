@@ -1,5 +1,48 @@
+import AppNavbar from "./AppNavbar"
 export default function AppHeader(){
 
+  const navs = [
+    {
+        name:"CHARACTERS",
+        link:"#",
+    },
+    {
+        name:"COMICS",
+        link:"#",
+    },
+    {
+        name:"MOVIES",
+        link:"#",
+    },
+    {
+        name:"TV",
+        link:"#",
+    },
+    {
+        name:"GAMES",
+        link:"#",
+    },
+    {
+        name:"COLLECTIBLES",
+        link:"#",
+    },
+    {
+        name:"VIDEOS",
+        link:"#",
+    },
+    {
+        name:"FANS",
+        link:"#",
+    },
+    {
+        name:"NEWS",
+        link:"#",
+    },
+    {
+        name:"SHOP",
+        link:"#",
+    },
+];
 
   return (
     <header> 
@@ -13,36 +56,11 @@ export default function AppHeader(){
               </button>
           <div className="collapse navbar-collapse flex-end" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link" href="#">CHARACTERS</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">COMICS</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">MOVIES</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">TV</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">GAMES</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">COLLECTIBLES</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">VIDEOS</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">FANS</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">NEWS</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">SHOP</a>
-              </li>
+              {navs.map(nav=>(
+                <li className="nav-item">
+                  <a className="nav-link" href="{nav.link}">{nav.name}</a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
