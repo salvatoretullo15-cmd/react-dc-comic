@@ -5,31 +5,38 @@ img{
     max-height:100%;
 }
 
+/*header*/
+
 .nav-link{
     font-size: smaller;
 }
 
-span{
+/*main*/
+
+p{
     font-size: smaller;
 }
+
+/*footer*/
 
 .jumbotron{
     background-image: url(public/img/footer-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    height: auto;
 }
 
 ul{
     list-style: none;
     padding-left: 0%;
+    
+    li{
+        color: grey;
+    }
 }
 
-li{
-    color: grey;
-}
 
 .blackbar{
     background-color: rgb(75, 74, 74);
+    max-height: auto;
 }
-

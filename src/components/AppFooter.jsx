@@ -1,12 +1,39 @@
 export default function AppFooter(){
 
+  const socials = [
+    {
+        id:1,
+        image:"./public/img/footer-facebook.png",
+        alt:"facebook",
+    },
+    {
+        id:2,
+        image:"./public/img/footer-periscope.png",
+        alt:"periscope",
+    },
+    {
+        id:3,
+        image:"./public/img/footer-pinterest.png",
+        alt:"pinterest",
+    },
+    {
+        id:4,
+        image:"./public/img/footer-twitter.png",
+        alt:"twitter",
+    },
+    {
+        id:5,
+        image:"./public/img/footer-youtube.png",
+        alt:"youtube",
+    },
+];
 
   return (
     <> 
     <div className="jumbotron">
       <div className="container justify-content-center text-white">
         <div className="row">
-          <div className="row-cols-sm-1 col-md-3 mt-4">
+          <div className="row-cols-sm-4 col-md-2 mt-4">
             <h2>
               DC COMICS
             </h2>
@@ -45,7 +72,7 @@ export default function AppFooter(){
               </li>
             </ul>
           </div>
-          <div className="row-cols-sm-1 col-md-3 mt-4">
+          <div className="row-cols-sm-4 col-md-2 mt-4">
             <h2>
               DC
             </h2>
@@ -85,7 +112,7 @@ export default function AppFooter(){
               </li>
             </ul>
           </div>
-          <div className="row-cols-sm-1 col-md-3 mt-4">
+          <div className="row-cols-sm-4 col-md-2 mt-4">
             <h2>
               SITES
             </h2>
@@ -111,18 +138,16 @@ export default function AppFooter(){
       </div>
     </div>
     <div className="blackbar">
-      <div className="container">
+      <div className="container justify-content-center">
         <div className="row">
-          <div className="flex-grow-1 col-9 p-3">
+          <div className="col-sm-6 col-md-7 p-3">
             <button className="border-primary btn text-white fw-bold">SIGN-UP NOW!</button>
           </div>
-          <div className="col-3 p-3">
+          <div className="col-sm-6 col-md-5 p-3">
             <button className="btn text-primary fw-bold">FOLLOW US</button>
-            <img src="./public/img/footer-facebook.png" alt="facebook" className="m-1"/>
-            <img src="./public/img/footer-periscope.png" alt="persicope"className="m-1" />
-            <img src="./public/img/footer-pinterest.png" alt="pinterest" className="m-1"/>
-            <img src="./public/img/footer-twitter.png" alt="twitter"className="m-1" />
-            <img src="./public/img/footer-youtube.png" alt="youtube" className="m-1"/>
+            {socials.map(social =>(
+              <img src={social.image} alt= {social.alt} key={social.id} className="m-1"/>
+            ))}
           </div>
         </div>
       </div>

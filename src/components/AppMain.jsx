@@ -1,4 +1,3 @@
-import AppCard from "./AppCard"
 export default function AppMain(){
 
 const comics = [
@@ -192,21 +191,23 @@ const icons = [
 
   return (
     <main className="bg-black text-white"> 
-      <div className="container-fluid p-5">
+      <div className="container p-5">
           <div className="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
             
           </div>
       </div>
       <div className="blueBar bg-primary p-5">
-        <div className="container-fluid justify-content-center align-items-center text-center row">
+        <div className="container">
+          <div className="row">
             {icons.map(icon=>(
-              <div className="col-md-2 p-2" key={icon.id}>
-                <img className="me-2" src={icon.image} alt={icon.alt}/>
-                  <p className="me-2">
-                    {icon.text}
-                  </p>
+              <div className="col-6 col-md-2 d-flex align-items-center justify-content-center" key={icon.id}>
+                <img className="m-2" src={icon.image} alt={icon.alt}/>
+                    <p className="m-2">
+                      {icon.text}
+                    </p>           
               </div>
             ))}
+          </div>
         </div>
       </div>
     </main>
