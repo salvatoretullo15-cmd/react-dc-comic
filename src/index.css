@@ -13,13 +13,20 @@ img{
 
 /*main*/
 
+.jumbotron-1{
+    background-image: url(public/img/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
 p{
     font-size: smaller;
 }
 
 /*footer*/
 
-.jumbotron{
+.jumbotron-2{
     background-image: url(public/img/footer-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;

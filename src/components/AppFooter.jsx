@@ -30,7 +30,7 @@ export default function AppFooter(){
 
   return (
     <> 
-    <div className="jumbotron">
+    <div className="jumbotron-2">
       <div className="container justify-content-center text-white">
         <div className="row">
           <div className="row-cols-sm-4 col-md-2 mt-4">

@@ -190,7 +190,9 @@ const icons = [
 
 
   return (
-    <main className="bg-black text-white"> 
+    <main className="bg-dark text-white">
+      <div className="jumbotron-1">
+      </div> 
       <div className="container p-5">
           <div className="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
             
