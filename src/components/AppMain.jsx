@@ -194,7 +194,7 @@ const icons = [
       <div className="jumbotron-1">
       </div> 
       <div className="container">
-        <button className="btn btn-primary rounded-0">CURRENT SERIES</button>
+        <button className="mezzo btn btn-primary fw-bold rounded-0">CURRENT SERIES</button>
           <div className="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
             {comics.map(comic => (
               <div className="col" key={comic.id}>
