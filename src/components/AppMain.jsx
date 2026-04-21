@@ -1,4 +1,5 @@
 import SeriesCards from "./SeriesCards";
+import BlueBarIcone from "./BlueBarIcone";
 
 export default function AppMain(){
 
@@ -211,14 +212,9 @@ const icons = [
       <div className="bluebar bg-primary p-5">
         <div className="container">
           <div className="row">
-            {icons.map(icon=>(
-              <div className="col-md-2 d-flex align-items-center justify-content-center" key={icon.id}>
-                <img className="m-2" src={icon.image} alt={icon.alt}/>
-                    <p className="m-2">
-                      {icon.text}
-                    </p>           
-              </div>
-            ))}
+              {icons.map(icon=>(
+              <BlueBarIcone key={icon.id} icon={icon} />
+              ))}
           </div>
         </div>
       </div>

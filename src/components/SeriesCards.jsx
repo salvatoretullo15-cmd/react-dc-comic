@@ -1,7 +1,7 @@
 export default function SeriesCards({comic}){
 
     return (
-        <div className="col" key={comic.id}>
+        <div className="col">
             <div className="card mt-4">
                 <img src={comic.thumb} className="imagine rounded-0" alt={comic.title} />
             </div>
