@@ -193,7 +193,8 @@ const icons = [
     <main className="bg-dark text-white">
       <div className="jumbotron-1">
       </div> 
-      <div className="container p-5">
+      <div className="container">
+        <button className="btn btn-primary rounded-0">CURRENT SERIES</button>
           <div className="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
             {comics.map(comic => (
               <div className="col" key={comic.id}>
@@ -205,7 +206,7 @@ const icons = [
             ))}
           </div>
           <div className="mt-4 d-flex justify-content-center">
-            <button className="btn btn-primary fw-bold ps-5 pe-5 border-0">
+            <button className="btn btn-primary fw-bold ps-5 pe-5 mb-5 rounded-0">
               LOAD MORE
             </button>
           </div>
