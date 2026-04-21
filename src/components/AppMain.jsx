@@ -1,3 +1,5 @@
+import SeriesCards from "./SeriesCards";
+
 export default function AppMain(){
 
 const comics = [
@@ -197,12 +199,7 @@ const icons = [
         <button className="mezzo btn btn-primary fw-bold rounded-0">CURRENT SERIES</button>
           <div className="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
             {comics.map(comic => (
-              <div className="col" key={comic.id}>
-                <div className="card mt-4">
-                  <img src={comic.thumb} className="imagine rounded-0" alt={comic.title} />
-                </div>
-                  <h2 className="textcomic mt-3">{comic.series}</h2>
-              </div>
+            <SeriesCards key={comic.id} comic={comic} />
             ))}
           </div>
           <div className="mt-4 d-flex justify-content-center">
